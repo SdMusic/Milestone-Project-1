@@ -6,6 +6,14 @@ body {
 }
 /*------------------------------------Colours*/
 
+.bg-grey {
+    background-color: rgba(193, 201, 195, 0.3);
+}
+
+.bg-teal {
+    background-color: rgba(153, 199, 165, 0.3);
+}
+
 
 /*------------------------------------Header*/
 
@@ -14,6 +22,7 @@ body {
     text-align: center;
     background-color:rgba(153, 199, 165, 0.3);
     margin: 0;
+    padding-top: 5px;
     font-size: 15px;
     display: block;
     height: 50px;
@@ -63,7 +72,7 @@ body {
 
 .dropdown:hover .dropbtn {color: #867f7f;}
 
-/*------------------------------------Mainpage body */
+/*------------------------------------homepage body */
 
 
 .carousel-inner {
@@ -81,7 +90,21 @@ height:auto
  }
 }*/
 
-/*------------------------------------Footer */
+/*------------------------------------recipe mainpage */
+
+.recipe-img {
+    height: 360px;
+    width: 460px;
+    padding: 20px;
+}
+
+.recipebtn {
+  color: rgb(41, 39, 39);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
 
 
 /*------------------------------------Footer */
@@ -94,7 +117,7 @@ footer {
 }
 
 .footer-spacing {
-    padding: 20px;
+    padding: 5px;
 }
 
 .social-networks {
