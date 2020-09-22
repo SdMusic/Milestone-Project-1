@@ -36,53 +36,98 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        <p class="banner">
+   <header>
+      <div class="banner">
+        <p>
           Anything from a garden party; festival and fine dining at home, you
           can make your event a success with GingerNut.
         </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="dropdown">
-              <a href="index.html"><button class="dropbtn">Home</button></a>
-            </div>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="col">
-            <div class="dropdown">
-              <button class="dropbtn">Recipes</button>
-              <div class="dropdown-content">
-                <a href="recipes.html#starters">Starters</a>
-                <a href="recipes.html#mains">Mains</a>
-                <a href="recipes.html#desserts">Desserts</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="recipes.html"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Recipes
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="recipes.html">Starters</a>
+                <a class="dropdown-item" href="recipes.html#mains">Mains</a>
+                <a class="dropdown-item" href="recipes.html#desserts">Desserts</a                >
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="dropdown">
-              <button class="dropbtn">Contact</button>
-              <div class="dropdown-content">
-                <a href="contact.html">Private Dining</a>
-                <a href="contact.html">Events Catering</a>
-                <a href="contact.html">Demo Sessions</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="contact.html">Private Dining</a>
+                <a class="dropdown-item" href="contact.html">Events Catering</a>
+                <a class="dropdown-item" href="contact.html">Demo Sessions</a>
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <button class="dropbtn">Locations</button>
-            <div class="dropdown-content">
-              <a href="locations.html#headoffice">Head Office</a>
-              <a href="locations.html#popuprest">Pop Up restaurants</a>
-              <a href="locations.html#popupdeli">Pop up Delis</a>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Locations
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="locations.html">Head Office</a>
+                <a class="dropdown-item" href="locations.html#popuprest">Pop Up restaurants</a>
+                <a class="dropdown-item" href="locations.html#popupdeli">Pop up Delis</a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
 
     <div class="container">
@@ -90,17 +135,18 @@
         <div class="row bg-grey">
           <div class="col">
             <img
-              class="recipe-img"
+              class="recipe-img img-fluid"
               src="assets/images/mackrel.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
           </div>
           <div class="col">
-            <h1>Starters</h1>
+            <h3>Starters</h3>
             <div id="starters">
+
               <ul class="nav nav-tabs">
                 <li class="active">
-                  <a class="recipebtn" data-toggle="tab" href="#starter-ing"
+                  <a onclick="myFunction()" class="recipebtn" data-toggle="tab" href="#starter-ing"
                     >Ingredients</a
                   >
                 </li>
@@ -110,6 +156,7 @@
                   >
                 </li>
               </ul>
+              <p id="hide">""We had this dish for our wedding dinner it was amazing!! If only we got to eat like that every day!" Jannet Eddwards"</p>
 
               <div class="tab-content">
                 <div id="starter-ing" class="tab-pane fade in active">
@@ -139,7 +186,7 @@
       <section>
         <div class="row">
           <div class="col">
-            <h1>Mains</h1>
+            <h3>Mains</h3>
             <div id="mains">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -178,7 +225,7 @@
           </div>
           <div class="col">
             <img
-              class="recipe-img"
+              class="recipe-img img-fluid"
               src="assets/images/risotto.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
@@ -190,13 +237,13 @@
         <div class="row bg-grey">
           <div class="col">
             <img
-              class="recipe-img"
+              class="recipe-img img-fluid"
               src="assets/images/rhubarb.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
           </div>
           <div class="col">
-            <h1>Dessert</h1>
+            <h3>Dessert</h3>
             <div id="desserts">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -286,5 +333,15 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("hide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
   </body>
 </html>
