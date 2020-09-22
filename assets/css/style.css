@@ -2,7 +2,7 @@ body {
     font-family:'Courier Prime', monospace;
     color: #777777;
     margin: 0;
-    position: relative;
+    padding-top: 110px;
 }
 /*------------------------------------Colours*/
 
@@ -14,9 +14,12 @@ body {
     background-color: rgba(153, 199, 165, 0.3);
 }
 
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
 
 /*------------------------------------Header*/
-
 
 .banner {
     text-align: center;
@@ -26,8 +29,62 @@ body {
     font-size: 15px;
     display: block;
 }
+.header {
+    padding: 5px;
+    margin: auto;
+}
 
+/*------------------------------------Side Navbar*/
 
+.s-nav-positon{
+    text-align: right;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    background-color: #ffffff;
+    height: 10px;
+    width: 10px;
+}
+
+.sidenav {
+  text-align: right;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 /*------------------------------------Navbar*/
 
@@ -86,7 +143,9 @@ body {
 
 .carousel-inner {
     height: 500px;
+    z-index: 3;
 }
+
 /*add media query for carousel--------------------------------*/
 .carousel-item img {
    height: 550px;
@@ -104,7 +163,6 @@ height:auto
 
 .recipe-img {
     padding: 10px;
-    z-index: 1;
 }
 
 .recipebtn {
