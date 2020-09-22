@@ -146,33 +146,17 @@
     </header>
 
     <div class="container">
-      <!----------------------sidenav bar-------->
-      <div class="s-nav-positon">
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      <span style="font-size: 30px; cursor: pointer;" onclick="openNav()"
-        >&#9776;</span
-      >
-      </div>
-
-      <!-------------------end of side nav------------>
+      
       <section>
         <div class="row bg-grey">
-          <div class="col">
+          <div class="col-lg-6 col-sm-12">
             <img
               class="recipe-img img-fluid"
               src="assets/images/mackrel.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-sm-12">
             <h3>Starters</h3>
             <div id="starters">
               <ul class="nav nav-tabs">
@@ -223,7 +207,14 @@
 
       <section>
         <div class="row">
-          <div class="col">
+        <div class="col-lg-6 col-sm-12 order-lg-last">
+            <img
+              class="recipe-img img-fluid"
+              src="assets/images/risotto.jpg"
+              alt="Torched mackerel, blood orange & puffed grains"
+            />
+          </div>
+          <div class="col-lg-6 col-sm-12 order-lg-first">
             <h3>Mains</h3>
             <div id="mains">
               <ul class="nav nav-tabs">
@@ -261,26 +252,20 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <img
-              class="recipe-img img-fluid"
-              src="assets/images/risotto.jpg"
-              alt="Torched mackerel, blood orange & puffed grains"
-            />
-          </div>
+          
         </div>
       </section>
 
       <section>
         <div class="row bg-grey">
-          <div class="col">
+          <div class="col-lg-6 col-sm-12">
             <img
               class="recipe-img img-fluid"
               src="assets/images/rhubarb.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
           </div>
-          <div class="col">
+          <div class="col col-lg-6 col-sm-12">
             <h3>Dessert</h3>
             <div id="desserts">
               <ul class="nav nav-tabs">
@@ -372,22 +357,9 @@
       crossorigin="anonymous"
     ></script>
 
-    <!------------------hide quotes script -->
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("hide");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-    <!---------------------------side nav script-->
-    <script>
+     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "10%";
       }
 
       function closeNav() {
