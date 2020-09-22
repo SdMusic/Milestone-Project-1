@@ -85,11 +85,12 @@ body {
 
 
 .carousel-inner {
-    height: 600px;
+    height: 500px;
 }
 /*add media query for carousel--------------------------------*/
 .carousel-item img {
-   height: 600px;
+   height: 550px;
+
 }
 
 

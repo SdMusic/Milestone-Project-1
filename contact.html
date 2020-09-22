@@ -36,54 +36,97 @@
   </head>
   <body>
     <header>
-      <div>
-        <p class="banner">
+      <div class="banner">
+        <p>
           Anything from a garden party; festival and fine dining at home, you
           can make your event a success with GingerNut.
         </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="dropdown">
-              <a href="index.html"><button class="dropbtn">Home</button></a>
-            </div>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="col">
-            <div class="dropdown">
-              <button class="dropbtn">Recipes</button>
-              <div class="dropdown-content">
-                <a href="recipes.html">Starters</a>
-                <a href="recipes.html#mains">Mains</a>
-                <a href="recipes.html#desserts">Desserts</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="recipes.html"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Recipes
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="recipes.html">Starters</a>
+                <a class="dropdown-item" href="recipes.html#mains">Mains</a>
+                <a class="dropdown-item" href="recipes.html#desserts">Desserts</a                >
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="dropdown">
-              <button class="dropbtn">Contact</button>
-              <div class="dropdown-content">
-                <a href="contact.html">Private Dining</a>
-                <a href="contact.html">Events Catering</a>
-                <a href="contact.html">Demo Sessions</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Contact
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="contact.html">Private Dining</a>
+                <a class="dropdown-item" href="contact.html">Events Catering</a>
+                <a class="dropdown-item" href="contact.html">Demo Sessions</a>
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="dropdown">
-              <button class="dropbtn">Locations</button>
-              <div class="dropdown-content">
-                <a href="locations.html#headoffice">Head Office</a>
-                <a href="locations.html#popuprest">Pop Up restaurants</a>
-                <a href="locations.html#popupdeli">Pop up Delis</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Locations
+              </a>
+              <div
+                class="dropdown-content dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="locations.html">Head Office</a>
+                <a class="dropdown-item" href="locations.html#popuprest">Pop Up restaurants</a>
+                <a class="dropdown-item" href="locations.html#popupdeli">Pop up Delis</a>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
 
     <section>
