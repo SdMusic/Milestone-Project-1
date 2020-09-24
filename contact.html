@@ -35,14 +35,15 @@
     <title>Private Dining & Event Catering</title>
   </head>
   <body>
-    <header class="fixed-top">
+    <header>
       <div class="banner">
         <p>
           Anything from a garden party; festival and fine dining at home, you
           can make your event a success with GingerNut.
         </p>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+
+      <nav class="fixed-top bg-grey navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
@@ -80,7 +81,9 @@
               >
                 <a class="dropdown-item" href="recipes.html">Starters</a>
                 <a class="dropdown-item" href="recipes.html#mains">Mains</a>
-                <a class="dropdown-item" href="recipes.html#desserts">Desserts</a                >
+                <a class="dropdown-item" href="recipes.html#desserts"
+                  >Desserts</a
+                >
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -120,8 +123,12 @@
                 aria-labelledby="navbarDropdown"
               >
                 <a class="dropdown-item" href="locations.html">Head Office</a>
-                <a class="dropdown-item" href="locations.html#popuprest">Pop Up restaurants</a>
-                <a class="dropdown-item" href="locations.html#popupdeli">Pop up Delis</a>
+                <a class="dropdown-item" href="locations.html#popuprest"
+                  >Pop Up restaurants</a
+                >
+                <a class="dropdown-item" href="locations.html#popupdeli"
+                  >Pop up Delis</a
+                >
               </div>
             </li>
           </ul>
@@ -129,214 +136,29 @@
       </nav>
     </header>
 
-   <div class="container">
-      
-      <section>
-        <div class="row bg-grey">
-          <div class="col-lg-6 col-sm-12">
-            <img
-              class="recipe-img img-fluid"
-              src="assets/images/mackrel.jpg"
-              alt="Torched mackerel, blood orange & puffed grains"
-            />
-          </div>
-          <div class="col-lg-6 col-sm-12 recipe-img">
-            <h3>Starters</h3>
-            <div id="starters">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <a
-                    onclick="myFunction()"
-                    class="recipebtn"
-                    data-toggle="tab"
-                    href="#starter-ing"
-                    >Ingredients</a
-                  >
-                </li>
-                <li>
-                  <a class="recipebtn" data-toggle="tab" href="#starter-meth"
-                    >Method</a
-                  >
-                </li>
-              </ul>
-              <p id="hide">
-                ""We had this dish for our wedding dinner it was amazing!! If
-                only we got to eat like that every day!" Jannet Eddwards"
-              </p>
-
-              <div class="tab-content">
-                <div id="starter-ing" class="tab-pane fade in active">
-                  <h3>Ingredients</h3>
-                  <ul>
-                    <li>stuff</li>
-                    <li>stuff and tings</li>
-                    <li>shiz</li>
-                    <li>tasty shiz an tings</li>
-                  </ul>
+   <section class="boxed bg-white">    
+            <form class="text-center">
+                <div class="form-group">
+                    <input class="form-control" type="text" id="fname" placeholder="First Name">
                 </div>
-                <div id="starter-meth" class="tab-pane fade">
-                  <h3>Method</h3>
-                  <ul>
-                    <li>cook it</li>
-                    <li>plate it</li>
-                    <li>taste it</li>
-                    <li>love it</li>
-                  </ul>
+                <div class="form-group">
+                    <input class="form-control" type="text" id="lname" placeholder="Last Name" required>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="row">
-        <div class="col-lg-6 col-sm-12 order-lg-last">
-            <img
-              class="recipe-img img-fluid"
-              src="assets/images/risotto.jpg"
-              alt="Torched mackerel, blood orange & puffed grains"
-            />
-          </div>
-          <div class="col-lg-6 col-sm-12 order-lg-first recipe-img">
-            <h3>Mains</h3>
-            <div id="mains">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <a class="recipebtn" data-toggle="tab" href="#main-ing"
-                    >Ingredients</a
-                  >
-                </li>
-                <li>
-                  <a class="recipebtn" data-toggle="tab" href="#main-meth"
-                    >Method</a
-                  >
-                </li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="main-ing" class="tab-pane fade in active">
-                  <h5>Ingredients</h5>
-                  <ul>
-                        <li>Risotto Base
-                            <ul> 
-                                <li>1kg Carnoroli rice</li>
-                                <li>2 x Large Banana shallots, diced</li>
-                                <li>250g unsalted butter </li>
-                                <li>750g white wine </li>
-                                <li>2l Vegtable stock</li>
-                            </ul>
-                        </li>
-                        <li>Artichoke puree
-                             <ul>
-                                <li>1kg Jerusalem Artichoke</li>
-                                <li>500ml Double Cream</li>
-                                <li>100g unsalted butter </li>
-                            </ul>
-                        </li>
-                        <li>Artichoke hearts (quartered)</li>
-                        <li>Suffolk Chorzio</li>
-                        <li>Peashoots (for garnish)</li>
-                  </ul>
+                <div class="form-group">
+                    <input class="form-control" type="email" id="email" required placeholder="Email Address" aria-describedby="ehelp">
+                    <small id="ehelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <div id="main-meth" class="tab-pane fade">
-                  <h5>Method</h5>
-                  <ul>
-                        <li>Risotto Base
-                            <ul>
-                                <li>Sweat shallots in butter until soften,</li>
-                                <li>Add rice. Toast rice until too hot too hold. Add 750ml of the wine to start.</li>
-                                <li>Put a timer on for 14 minutes. Once an emulsion is formed, added the remaining wine and cook out on a gentle heat</li>
-                                <li>Once the wine has been absorbed, start to add the hot vegetable nage and stir constantly and continue to cook.</li>
-                                <li>When the timer reaches 5 minutes stop adding vegetable stock and start to ‘dry’ the base out. Pour onto flat trays and blast chill.</li>
-                            </ul>
-                        </li>
-                        <li>Aritchoke Puree
-                            <ul>
-                                <li>Peel Jerusalem artichoke and dice to 1cm peices</li>
-                                <li>Add Aritchoke, cream and butter to pan on medium heat with lid and cook till tender.</li>
-                                <li>Once tender strain liquid (keeping aside) and add artichoke to food processor slowly adding liquid til thick creamy consistency is aquired</li>
-                                <li>Pass mixture through fine sieve.</li>
-                            </ul>
-                        </li>
-                        <li>Chorizo Crisp
-                            <ul>
-                                <li>Add chorizo to food processor and blitz till forms a crumb</li>
-                                <li>Bake chorizo at 160 for 2 hours while draining the liquid</li>
-                                <li>Add baked chorizo to food processor once to to make fine crumb</li>
-                            </ul>
-                        </li>
-                        <li>Putting it together
-                            <ul>
-                                <li>add some vegetable stock to saucepan and add cooled risotto to bring to tempreture</li>
-                                <li>once risotto base is hot add artichoke puree and fold in</li>
-                                <li>Plate with quartered artichokes, chorizo crumb and peashoots to garnish</li>
-                            </ul>
-                        </li>
-                    
-                  </ul>
+                <div class="form-group">
+                    <label for="textdrop">Message</label>
+                    <textarea class="form-control" type="text" id="textdrop" placeholder="Message Here"></textarea>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section>
+                <button type="submit" class="btn bg-teal">Submit</button>
+            </form>
 
-      <section>
-        <div class="row bg-grey">
-          <div class="col-lg-6 col-sm-12">
-            <img
-              class="recipe-img img-fluid"
-              src="assets/images/rhubarb.jpg"
-              alt="Torched mackerel, blood orange & puffed grains"
-            />
-          </div>
-          <div class="col col-lg-6 col-sm-12 recipe-img">
-            <h3>Dessert</h3>
-            <div id="desserts">
-              <ul class="nav nav-tabs">
-                <li class="active">
-                  <a class="recipebtn" data-toggle="tab" href="#dessert-ing"
-                    >Ingredients</a
-                  >
-                </li>
-                <li>
-                  <a class="recipebtn" data-toggle="tab" href="#dessert-meth"
-                    >Method</a
-                  >
-                </li>
-              </ul>
+        
+    </section>
 
-              <div class="tab-content">
-                <div id="dessert-ing" class="tab-pane fade in active">
-                  <h3>Ingredients</h3>
-                  <ul>
-                    <li>1kg Carnoroli rice</li>
-                    <li>2 x Large Banana shallots, diced</li>
-                    <li>250g unsalted butter </li>
-                    <li>750g white wine </li>
-                    <li>2l Vegtable stock</li>
-                  </ul>
-                </div>
-                <div id="dessert-meth" class="tab-pane fade">
-                  <h3>Method</h3>
-                  <ul>
-                    <li>Sweat shallots in butter until soften,</li>
-                    <li>Add rice. Toast rice until too hot too hold. Add 750ml of the wine to start.</li>
-                    <li>Put a timer on for 14 minutes. Once an emulsion is formed, added the remaining wine and cook out on a gentle heat</li>
-                    <li>Once the wine has been absorbed, start to add the hot vegetable nage and stir constantly and continue to cook.</li>
-                    <li>When the timer reaches 5 minutes stop adding vegetable stock and start to ‘dry’ the base out. Pour onto flat trays and blast chill.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom position-relative">
       <div class="footer-spacing">
         <ul class="social-networks">
           <li>
@@ -364,7 +186,7 @@
         </ul>
       </div>
       <div>
-        <p class="banner">
+        <p class="fbanner fixed-bottom">
           GingerNut Ltd. Phone:(+44) 8003663123 Fax:(+44) 8003663124
         </p>
       </div>

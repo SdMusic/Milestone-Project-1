@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding-top: 60px;
     font-size: 15px;
-    height: 80px;
+    /*height: 80px;*/
     display: block;
 }
 .header {
@@ -132,6 +132,29 @@ height:auto
   font-size: 16px;
   border: none;
 }
+.boxed {
+    height: 400px;
+    background-color: #fff; 
+    padding: 30px;  
+    margin: 30px;
+}
+
+/*------------------------------------Scrollbar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(193, 201, 195,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5); 
+}
+
 
 /*------------------------------------Footer */
 
