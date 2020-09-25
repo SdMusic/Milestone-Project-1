@@ -31,28 +31,35 @@
     />
     <link
       rel="apple-touch-icon"
-      href="assets/images/favicon.ico"
-      type="image/jpeg"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
     />
     <link
-      href="assets/images/favicon.ico"
-      rel="shortcut icon"
-      type="image/x-icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
     />
-
-    <title>Free Recipes - Private Dining & Event Catering</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <title>Private Dining & Event Catering</title>
   </head>
 
   <body>
-    <header>
+     <header class="bg-grey">
       <div class="banner">
-        <p>
+        <p class="m-0">
           Anything from a garden party; festival and fine dining at home, you
           can make your event a success with GingerNut.
         </p>
       </div>
 
-      <nav class="fixed-top bg-grey navbar navbar-expand-lg navbar-light">
+      <nav class="fixed-top bg-teal navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
@@ -68,12 +75,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="recipes.html"
@@ -95,25 +102,10 @@
                 >
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                >Contact <span class="sr-only">(current)</span></a
               >
-                Contact
-              </a>
-              <div
-                class="dropdown-content dropdown-menu"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item" href="contact.html">Private Dining</a>
-                <a class="dropdown-item" href="contact.html">Events Catering</a>
-                <a class="dropdown-item" href="contact.html">Demo Sessions</a>
-              </div>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -145,7 +137,7 @@
       </nav>
     </header>
 
-    <div class="container">
+    <div class="container p-b">
       
       <section>
         <div class="row bg-grey">
@@ -442,38 +434,40 @@
       </section>
     </div>
 
-    <footer class="fixed-bottom position-relative">
-      <div class="footer-spacing">
-        <ul class="social-networks">
-          <li>
-            <a href="http://www.facebook.com" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.youtube.com" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/chef.gingerbeard/?hl=en"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
+   <footer class="fixed-bottom">
+
+        
+    <div class="bg-grey row">
+      <div class="col-4 text-right social-networks">
+        <a href="http://www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
       </div>
-      <div>
-        <p class="fbanner fixed-bottom">
+      <div class="col-2 social-networks">
+        <a href="http://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div class="col-2 social-networks">
+        <a href="http://www.youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <div class="col-4 text-left social-networks">
+        <a
+          href="https://www.instagram.com/chef.gingerbeard/?hl=en"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="col-12 bg-teal fbanner">
+        <p class="mb-0">
           GingerNut Ltd. Phone:(+44) 8003663123 Fax:(+44) 8003663124
         </p>
       </div>
+    </div>
+    
+    
     </footer>
 
     <script

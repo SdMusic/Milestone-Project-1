@@ -3,18 +3,23 @@ body {
     color: #777777;
     margin: 0;
 }
+
+.p-b {
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
 /*------------------------------------Colours*/
 
 .bg-grey {
-    background-color: rgba(193, 201, 195, 0.3);
+    background-color: rgba(193, 201, 195, 0.4);
 }
 
 .bg-teal {
-    background-color: rgba(153, 199, 165, 0.3);
+    background-color: rgba(247, 136, 0, 0.8);
 }
 
 .bg-white {
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 
@@ -22,7 +27,6 @@ body {
 
 .banner {
     text-align: center;
-    background-color:rgba(153, 199, 165, 0.3);
     margin: 0;
     padding-top: 60px;
     font-size: 15px;
@@ -88,16 +92,38 @@ body {
 
 /*------------------------------------homepage body */
 
+.whitespace {
+    color: #ffffff;
+    height: 160px;
+}
 
 .carousel-inner {
    overflow: hidden;
-   height: 70vh;
-    z-index: 3;
-    width: 100vw;
+   z-index: 3;
+    width: 100%;
 }
 
-/*add media query for carousel--------------------------------*/
-.carousel-item img {
+/*-----------------------------------------------banner info--------------------------------*/
+
+.notes{
+  background-image: url("assets/images/logo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.notes div{
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, .6);
+  height: 150px;
+  vertical-align: center;  
+  text-align: center;
+}
+
+/*-----------------------------------------------banner info end--------------------------------*/
+.carousel-inner div img {
    
    background-position: center;
    background-repeat: no-repeat;
@@ -113,6 +139,24 @@ body {
     z-index: 10;
 }
 
+.border-groove {
+    border: 3px groove #fff;
+}
+
+.logo {
+    background-image: url("assets/images/logo2.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1030;
+}
+
+.border-ridge {
+  border: 6px ridge #36c987;
+}
+
 
 /*@media(max-width:768px){
 .carousel .carousel-inner{
@@ -121,7 +165,6 @@ height:auto
 }*/
 
 /*------------------------------------recipe mainpage */
-
 .recipe-img {
     padding: 30px;
 }
@@ -138,6 +181,20 @@ height:auto
     padding: 30px;  
     margin: 30px;
 }
+
+
+
+/*------------------------------------Form----------- */
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: rgba(153, 199, 165, 0.9);
+  color: white;
+}
+
 
 /*------------------------------------Scrollbar */
 
@@ -160,11 +217,12 @@ height:auto
 
 
 .footer-spacing {
-    padding: 5px;
+    padding: 10px;
 }
 
 .social-networks {
   text-align: center;
+  padding-inline-start: 0px;
 }
 
 .social-networks li {
@@ -173,16 +231,24 @@ height:auto
 
 .social-networks i{
   font-size: 160%;
-  margin: 1%;
-  padding: 4%;
+  margin: 10px;
+  padding: 10px;
   color: rgb(41, 39, 39);
 }
 
 .fbanner {
     text-align: center;
-    background-color:rgba(153, 199, 165, 0.3);
+    
     margin: 0;
     padding: 10px;
     font-size: 15px;
     display: block;
     height: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {position: relative !important;
+  }
+}
+
+

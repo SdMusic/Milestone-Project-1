@@ -31,26 +31,33 @@
     />
     <link
       rel="apple-touch-icon"
-      href="assets/images/logo2.jpg"
-      type="image/jpeg"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
     />
     <link
-      href="assets/images/favicon.ico"
-      rel="shortcut icon"
-      type="image/x-icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
     />
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <title>Private Dining & Event Catering</title>
   </head>
   <body>
-    <header class="h-25">
+    <header class="bg-grey">
       <div class="banner">
-        <p>
-          Anything from a garden party; festival and fine dining at home, you
-          can make your event a success with GingerNut.
+        <p class="m-0">
+          Keep an eye on this page for regularly updated events! Or sign up to our mailing list!
         </p>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+
+      <nav class="fixed-top bg-teal navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
@@ -66,7 +73,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
@@ -88,30 +95,17 @@
               >
                 <a class="dropdown-item" href="recipes.html">Starters</a>
                 <a class="dropdown-item" href="recipes.html#mains">Mains</a>
-                <a class="dropdown-item" href="recipes.html#desserts">Desserts</a                >
+                <a class="dropdown-item" href="recipes.html#desserts"
+                  >Desserts</a
+                >
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                >Contact <span class="sr-only">(current)</span></a
               >
-                Contact
-              </a>
-              <div
-                class="dropdown-content dropdown-menu"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item" href="contact.html">Private Dining</a>
-                <a class="dropdown-item" href="contact.html">Events Catering</a>
-                <a class="dropdown-item" href="contact.html">Demo Sessions</a>
-              </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -128,8 +122,12 @@
                 aria-labelledby="navbarDropdown"
               >
                 <a class="dropdown-item" href="locations.html">Head Office</a>
-                <a class="dropdown-item" href="locations.html#popuprest">Pop Up restaurants</a>
-                <a class="dropdown-item" href="locations.html#popupdeli">Pop up Delis</a>
+                <a class="dropdown-item" href="locations.html#popuprest"
+                  >Pop Up restaurants</a
+                >
+                <a class="dropdown-item" href="locations.html#popupdeli"
+                  >Pop up Delis</a
+                >
               </div>
             </li>
           </ul>
@@ -143,13 +141,13 @@
         <div class="row bg-grey">
           <div class="col-lg-6 col-sm-12">
             <img
-              class="recipe-img img-fluid"
-              src="assets/images/mackrel.jpg"
+              class="recipe-img img-fluid w-100 h-100"
+              src="assets/images/head-office.jpg"
               alt="Torched mackerel, blood orange & puffed grains"
             />
           </div>
           <div class="col-lg-6 col-sm-12 recipe-img">
-            <h3>Starters</h3>
+            <h3>Head Office</h3>
             <div id="starters">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -158,12 +156,12 @@
                     class="recipebtn"
                     data-toggle="tab"
                     href="#starter-ing"
-                    >Ingredients</a
+                    >Location</a
                   >
                 </li>
                 <li>
                   <a class="recipebtn" data-toggle="tab" href="#starter-meth"
-                    >Method</a
+                    >Our Story</a
                   >
                 </li>
               </ul>
@@ -200,24 +198,21 @@
       <section>
         <div class="row">
         <div class="col-lg-6 col-sm-12 order-lg-last">
-            <img
-              class="recipe-img img-fluid"
-              src="assets/images/risotto.jpg"
-              alt="Torched mackerel, blood orange & puffed grains"
-            />
+            <iframe class="recipe-img img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.052221280102!2d-1.2119626841765543!3d52.94748337989729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e9fa4df6e8ff%3A0xc2c9eb0856371845!2sWollaton%20Hall%2C%20Gardens%20and%20Deer%20Park!5e0!3m2!1sen!2suk!4v1600951922848!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="recipe-img img-fluid" width="853" height="480" src="https://www.youtube.com/embed/vxF1n96cpHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 col-sm-12 order-lg-first recipe-img">
-            <h3>Mains</h3>
+            <h3>Nottingham Food festival</h3>
             <div id="mains">
               <ul class="nav nav-tabs">
                 <li class="active">
                   <a class="recipebtn" data-toggle="tab" href="#main-ing"
-                    >Ingredients</a
+                    >Information</a
                   >
                 </li>
                 <li>
                   <a class="recipebtn" data-toggle="tab" href="#main-meth"
-                    >Method</a
+                    >Demo times</a
                   >
                 </li>
               </ul>
@@ -298,17 +293,17 @@
             <iframe class="recipe-img img-fluid" width="853" height="480" src="https://www.youtube.com/embed/lVfu4ppMhmA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="col col-lg-6 col-sm-12 recipe-img">
-            <h3>Dessert</h3>
+            <h3>Digbeth Dining Club</h3>
             <div id="desserts">
               <ul class="nav nav-tabs">
                 <li class="active">
                   <a class="recipebtn" data-toggle="tab" href="#dessert-ing"
-                    >Ingredients</a
+                    >Event Info</a
                   >
                 </li>
                 <li>
                   <a class="recipebtn" data-toggle="tab" href="#dessert-meth"
-                    >Method</a
+                    >Booking Info</a
                   >
                 </li>
               </ul>
@@ -341,38 +336,40 @@
       </section>
     </div>
 
-    <footer class="fixed-bottom positon-relative">
-      <div class="footer-spacing">
-        <ul class="social-networks">
-          <li>
-            <a href="http://www.facebook.com" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a href="http://www.youtube.com" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/chef.gingerbeard/?hl=en"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
+    <footer class="fixed-bottom">
+
+        
+    <div class="bg-grey row">
+      <div class="col-4 text-right social-networks">
+        <a href="http://www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
       </div>
-      <div>
-        <p class="banner">
+      <div class="col-2 social-networks">
+        <a href="http://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div class="col-2 social-networks">
+        <a href="http://www.youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <div class="col-4 text-left social-networks">
+        <a
+          href="https://www.instagram.com/chef.gingerbeard/?hl=en"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="col-12 bg-teal fbanner">
+        <p class="mb-0">
           GingerNut Ltd. Phone:(+44) 8003663123 Fax:(+44) 8003663124
         </p>
       </div>
+    </div>
+    
+    
     </footer>
 
     <script
