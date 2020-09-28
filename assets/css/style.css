@@ -10,6 +10,10 @@ body {
 }
 /*------------------------------------Colours*/
 
+.text-white {
+    color: #fafafa;
+}
+
 .bg-grey {
     background-color: rgba(193, 201, 195, 0.4);
 }
@@ -120,6 +124,9 @@ body {
   height: 150px;
   vertical-align: center;  
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*-----------------------------------------------banner info end--------------------------------*/
