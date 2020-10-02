@@ -67,7 +67,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(199,233,218,0.5);
+  background-color: rgba(199,233,218,0.9);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(199,233,218,0.3);
   z-index: 2;
@@ -183,13 +183,11 @@ height:auto
   border: none;
 }
 .boxed {
-    height: 400px;
+    height: 480px;
     background-color: #fff; 
     padding: 30px;  
     margin: 30px;
 }
-
-
 
 /*------------------------------------Form----------- */
 

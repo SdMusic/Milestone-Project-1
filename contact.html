@@ -9,19 +9,9 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans+Condensed:wght@300&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Open+Sans+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
     />
     <link
       rel="stylesheet"
@@ -47,9 +37,11 @@
       href="assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Private Dining & Event Catering</title>
   </head>
   <body>
+  <!----------------------------------------Start of Header--------------------------------------> 
   <header class="bg-grey">
       <div class="banner">
         <p class="m-0">
@@ -57,7 +49,7 @@
           can make your event a success with GingerNut.
         </p>
       </div>
-
+<!----------------------------------------Start of Navbar--------------------------------------> 
       <nav class="fixed-top bg-teal navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
         <button
@@ -135,10 +127,11 @@
         </div>
       </nav>
     </header>
+   <!----------------------------------------End of Header and Navbar start of Form-------------------------------------->  
 <section class="boxed bg-white">    
             <form class="text-center">
                 <div class="form-group">
-                    <input class="form-control" type="text" id="fname" placeholder="First Name">
+                    <input class="form-control" type="text" id="fname" placeholder="First Name" required>
                 </div>
                 <div class="form-group">
                     <input class="form-control" type="text" id="lname" placeholder="Last Name" required>
@@ -149,50 +142,46 @@
                 </div>
                 <div class="form-group">
                     <label for="textdrop">Message</label>
-                    <textarea class="form-control" type="text" id="textdrop" placeholder="Message Here"></textarea>
+                    <textarea class="form-control" type="text" id="textdrop" placeholder="Message Here" required></textarea>
                 </div>
                 <button type="submit" class="btn bg-teal">Submit</button>
             </form>
 
         
     </section>
-
-<footer class="fixed-bottom">
-
-        
-    <div class="bg-grey row">
-      <div class="col-4 text-right social-networks">
-        <a href="http://www.facebook.com" target="_blank"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-      </div>
-      <div class="col-2 social-networks">
-        <a href="http://www.twitter.com" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-      </div>
-      <div class="col-2 social-networks">
-        <a href="http://www.youtube.com" target="_blank"
-          ><i class="fab fa-youtube"></i
-        ></a>
-      </div>
-      <div class="col-4 text-left social-networks">
-        <a
-          href="https://www.instagram.com/chef.gingerbeard/?hl=en"
-          target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
-      <div class="col-12 bg-teal fbanner">
-        <p class="mb-0">
-          GingerNut Ltd. Phone:(+44) 8003663123 Fax:(+44) 8003663124
-        </p>
-      </div>
-    </div>
-    
-    
-    </footer>
-
+<!----------------------------------------End of Form  and Start of Footer--------------------------------------> 
+<footer class="fixed-bottom">        
+        <div class="bg-grey row">
+        <div class="col-4 text-right social-networks">
+            <a href="http://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+        </div>
+        <div class="col-2 social-networks">
+            <a href="http://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+            ></a>
+        </div>
+        <div class="col-2 social-networks">
+            <a href="http://www.youtube.com" target="_blank"
+            ><i class="fab fa-youtube"></i
+            ></a>
+        </div>
+        <div class="col-4 text-left social-networks">
+            <a
+            href="https://www.instagram.com/chef.gingerbeard/?hl=en"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+            ></a>
+        </div>
+        <div class="col-12 bg-teal fbanner">
+            <p class="mb-0">
+            GingerNut Ltd. Phone:(+44) 8003663123 Fax:(+44) 8003663124
+            </p>
+        </div>
+        </div>  
+</footer>
+<!----------------------------------------End of Footer--------------------------------------> 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
