@@ -4,7 +4,7 @@
 
 ## Deployed version
 
-https://evert-r.github.io/milestone-one
+https://sdmusic.github.io/Milestone-Project-1/
 
 ## UX
 
